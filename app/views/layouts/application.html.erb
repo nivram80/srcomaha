@@ -9,11 +9,16 @@
   </head>
 
   <body>
-    <div id="wrap">
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', home_path %></li>
+        <li><%= link_to 'About Us', home_path %></li>
+        <li><%= link_to 'Projects', home_path %></li>
+        <li><%= link_to 'Contact Us', home_path %></li>
+      </ul>
+    </nav>
       
       <%= yield %>
-    
-    </div>
 
     <%= javascript_include_tag "application" %>
 

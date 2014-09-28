@@ -23,19 +23,59 @@ body {
 	font-family: georgia, serif;
 	text-align: center;
 	color: #272727;
-	background: #e6e6e6;
 	padding: 0;
 	margin: 0;
+	background-color: #000;
 }
 
-#wrap {
+nav {
+
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+
+	li {
+		display: inline-block;
+			margin-left: 1.5625em;
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+#content-wrap {
 	width: 62.5em;
 	margin: 1.5em auto;
 }
 
+.top-bg-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	background: url(kitchen2.jpg);
+	background-size: cover;
+	background-color: #272727;
+	background-position: center center;
+	z-index: -1;
+
+	.texture {
+		height: 100%;
+		background-image: url(grey_texture.png);
+	}
+
+}
+
 @media only screen and (min-width: 300px) {
 
-	#wrap {
+	#content-wrap {
 		width: 18.75em;
 	}
 
@@ -43,7 +83,7 @@ body {
 
 @media only screen and (min-width: 480px) {
 
-	#wrap {
+	#content-wrap {
 		width: 30em;
 	}
 
@@ -51,7 +91,7 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-	#wrap {
+	#content-wrap {
 		width: 48em;
 	}
 
@@ -59,7 +99,7 @@ body {
 
 @media only screen and (min-width: 1024px) {
 
-	#wrap {
+	#content-wrap {
 		width: 64em;
 	}
 
