@@ -1,0 +1,69 @@
+@media only screen and (min-width: 300px) {
+
+	#content-wrap {
+		width: 18.75em;
+	}
+
+}
+
+@media only screen and (min-width: 480px) {
+
+	#content-wrap {
+		width: 30em;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	#content-wrap {
+		width: 48em;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	#content-wrap {
+		width: 64em;
+	}
+
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-size: 1em;
+	font-family: georgia, serif;
+	text-align: center;
+	color: #272727;
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+}
+
+nav {
+
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+
+	.logo {
+		display: inline-block;
+	}
+
+	li {
+		display: inline-block;
+			margin-left: 1.5625em;
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+
+}
