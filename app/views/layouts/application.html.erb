@@ -11,7 +11,7 @@
   <body>
     <div class="content-wrap">
       <nav>
-        <div class="logo">
+        <div class="logo left">
           <%= image_tag("src_logo2.png", alt: "SrcOmaha") %>
         </div>
         <ul>
@@ -20,7 +20,7 @@
           <li><%= link_to 'Projects', home_path %></li>
           <li><%= link_to 'Contact Us', home_path %></li>
         </ul>
-        <%= link_to "Menu", home_path, class: "menu" %>
+        <%= link_to "Menu", home_path, class: "menu-button" %>
       </nav>
       
       <%= yield %>

@@ -13,33 +13,41 @@ body {
 	width: 100%;
 }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 .content-wrap {
 	margin: 0 10%;
 }
 
 nav {
 
-	top: 0;
 	width: 100%;
 	display: inline-block;
+	margin-top: 20px;
 
-	.logo {
-		float: left;
-
-		img {
-			width: 60%;
-		}
+	.logo img {
+		width: 60%;
 	}
 
 	ul {
 		display: none;
 	}
 
-	.menu {
-		display: block;
+	.menu-button {
+		display: inline-block;
+		width: 100px;
 		margin-top: 40px;
+		padding: 10px 20px;
 		text-decoration: none;
-		color: #fff;
+		background-color: #fff;
+		color: #272727;
+		opacity: 0.8;
 		text-transform: uppercase;
 	}
 
@@ -58,6 +66,10 @@ nav {
 
 /* Really Small Laptops */
 @media only screen and (min-width: 768px) {
+
+	.content-wrap {
+		margin: 0 5%;
+	}
 
 	nav {
 
@@ -84,7 +96,7 @@ nav {
 				text-transform: uppercase;
 			}
 		}
-		.menu {
+		.menu-button {
 			display: none;
 		}
 	}
