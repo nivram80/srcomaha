@@ -31,8 +31,12 @@ nav {
 	display: inline-block;
 	margin-top: 20px;
 
-	.logo img {
-		width: 60%;
+	.logo {
+
+		img {
+			width: 60%;
+		}
+
 	}
 
 	ul {
@@ -42,7 +46,6 @@ nav {
 	.menu-button {
 		display: inline-block;
 		width: 100px;
-		margin-top: 40px;
 		padding: 10px 20px;
 		text-decoration: none;
 		background-color: #fff;
@@ -51,20 +54,72 @@ nav {
 		text-transform: uppercase;
 	}
 
-}
+	.menu-button:hover {
+		opacity: 1;
+	}
 
-/* Phones - Portrait & Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-
-
-}
-
-/* Tablets - Portrait & Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+	.menu-button:active {
+		opacity: 1;
+	}
 
 }
 
-/* Really Small Laptops */
+/* Phones */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+
+	.content-wrap {
+		margin: 0 5%;
+	}
+
+	nav {
+
+		.logo {
+			width: 100px;
+
+			img {
+				width: 100px;
+			}
+
+		}
+
+		.menu-button {
+			width: 75px;
+			margin-top: 10px;
+			float: right;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+
+	.content-wrap {
+		margin: 0 5%;
+	}
+
+	nav {
+
+		.logo {
+			width: 234px;
+
+			img {
+				width: 60%;
+			}
+
+		}
+
+		.menu-button {
+			width: 100px;
+			margin-top: 20px;
+			float: right;
+		}
+	}
+
+}
+
+
+
+/* Tablets */
 @media only screen and (min-width: 768px) {
 
 	.content-wrap {
@@ -74,10 +129,12 @@ nav {
 	nav {
 
 		.logo {
+			width: 234px;
 
 			img {
-				width: 75%;
+				width: 60%;
 			}
+	
 		}
 
 		ul {
@@ -106,13 +163,20 @@ nav {
 /* Small Laptops */
 @media only screen and (min-width: 1024px) {
 
+	.content-wrap {
+		margin: 0 10%;
+	}
+
 	nav {
 
 		.logo {
+			
 			img {
 				width: 100%;
 			}
+
 		}
+
 	}
 
 }
