@@ -4,7 +4,7 @@ html {
 
 body {
 	font-size: 1em;
-	font-family: georgia, serif;
+	font-family: apercu, sans-serif;
 	text-align: center;
 	color: #272727;
 	padding: 0px;
@@ -48,9 +48,8 @@ nav {
 		width: 100px;
 		padding: 10px 20px;
 		text-decoration: none;
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.8);
 		color: #272727;
-		opacity: 0.8;
 		text-transform: uppercase;
 	}
 
@@ -115,6 +114,10 @@ nav {
 		}
 	}
 
+	.motto-container {
+		font-size: 1.25em;
+	}
+
 }
 
 
@@ -145,12 +148,18 @@ nav {
 
 		li {
 			display: inline-block;
-			margin-left: 1.5625em;
+			margin-left: 2em;
 
 			a {
 				text-decoration: none;
 				color: #fff;
 				text-transform: uppercase;
+				letter-spacing: 1.1px;
+				transition: all 0.75s ease;
+			}
+
+			a:hover {
+				color: #000;
 			}
 		}
 		.menu-button {
