@@ -9,7 +9,7 @@ body {
 	color: #272727;
 	padding: 0px;
 	margin: 0px;
-	background-color: #000;
+	background-color: #fff;
 	width: 100%;
 }
 
@@ -63,7 +63,6 @@ nav {
 
 }
 
-/* Phones */
 @media only screen and (min-width: 320px) and (max-width: 568px) {
 
 	.content-wrap {
@@ -86,6 +85,21 @@ nav {
 			margin-top: 10px;
 			float: right;
 		}
+	}
+
+	.motto-container {
+		font-size: 0.8em !important;
+		margin-top: 6em !important;
+		margin-right: 0 !important;
+	}
+
+	.quote-container {
+		margin: 6em 0 0 0 !important;
+		padding: 20px !important;
+		width: 85% !important;
+		text-align: left !important;
+		font-size: 0.75em !important;
+
 	}
 
 }
@@ -115,14 +129,12 @@ nav {
 	}
 
 	.motto-container {
-		font-size: 1.25em;
+		font-size: 1.25em !important;
 	}
 
 }
 
 
-
-/* Tablets */
 @media only screen and (min-width: 768px) {
 
 	.content-wrap {
@@ -148,7 +160,7 @@ nav {
 
 		li {
 			display: inline-block;
-			margin-left: 2em;
+			margin-left: 1.4em;
 
 			a {
 				text-decoration: none;
@@ -167,9 +179,12 @@ nav {
 		}
 	}
 
+	.motto-container {
+		font-size: 1.25em !important;
+	}
+
 }
 
-/* Small Laptops */
 @media only screen and (min-width: 1024px) {
 
 	.content-wrap {
@@ -188,15 +203,17 @@ nav {
 
 	}
 
+	.motto-container {
+		font-size: 2.25em !important;
+	}
+
 }
 
-/* Desktops & Laptops */
 @media only screen and (min-width: 1224px) {
 
 
 }
 
-/* Large screens */
 @media only screen and (min-width: 1824px) {
 
 
