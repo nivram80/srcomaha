@@ -12,3 +12,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'dotenv-rails'
 gem 'unicorn'
+
+group :production do
+	gem 'rails_12factor'
+end
