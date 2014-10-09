@@ -20,14 +20,14 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url(kitchen2.jpg);
+	background: url('kitchen2.jpg');
 	background-size: cover;
 	background-position: center center;
 	z-index: -1;
 
 	.texture {
 		height: 100%;
-		background-image: url(grey_texture.png);
+		background-image: url('grey_texture.png');
 	}
 
 }
@@ -102,15 +102,15 @@
 	}
 
 	.about-us {
-		background-image: url(book2.png);
+		background-image: url('book2.png');
 	}
 
 	.projects {
-		background-image: url(paint-roller.png);
+		background-image: url('paint-roller.png');
 	}
 
 	.contact {
-		background-image: url(comments.png);
+		background-image: url('comments.png');
 	}
 }
 
