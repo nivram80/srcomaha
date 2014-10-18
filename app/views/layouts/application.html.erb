@@ -11,18 +11,26 @@
 
   <body>
     <div class="content-wrap">
-      <nav>
-        <div class="logo left">
-          <%= image_tag("src_logo2.png", alt: "SrcOmaha") %>
-        </div>
+      <nav class="static right">
         <ul>
           <li><%= link_to 'Home', home_path %></li>
           <li><%= link_to 'About Us', home_path %></li>
           <li><%= link_to 'Projects', home_path %></li>
           <li><%= link_to 'Contact Us', home_path %></li>
         </ul>
-        <%= link_to "Menu", home_path, class: "menu-button" %>
       </nav>
+      <div class="logo">
+        <%= image_tag("src_logo2.png", alt: "SrcOmaha") %>
+      </div>
+      <nav data-magellan-expedition="fixed">
+        <ul class="sub-nav">
+          <li data-megellan-arrival="home"><%= link_to 'Home', home_path %></li>
+          <li data-megellan-arrival="about-us"><%= link_to 'About Us', home_path %></li>
+          <li data-megellan-arrival="project"><%= link_to 'Projects', home_path %></li>
+          <li data-megellan-arrival="contact-us"><%= link_to 'Contact Us', home_path %></li>
+        </ul>
+      </nav>
+      <%#= link_to "Menu", home_path, class: "menu-button" %>
       
       <%= yield %>
 

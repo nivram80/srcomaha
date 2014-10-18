@@ -1,46 +1,33 @@
 @import 'globals';
 
-/*.parallax {
-	perspective: 1px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.front-layer {
-	transform: translateZ(0);
-}
-
-.back-layer {
-	transform: translateZ(-1px);
-}*/
-
-.top-bg-image {
-	position: absolute;
+.banner {
+	position: relative;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
+	width: 100%;
+	height: 650px;
 	background: image-url('kitchen2.jpg');
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
+	background-repeat: no-repeat;
 	z-index: -1;
 
-	.texture {
-		height: 100%;
-		background-image: image-url('grey_texture.png');
-	}
+	// .texture {
+	// 	height: 100%;
+	// 	background-image: image-url('grey_texture.png');
+	// }
 
 }
 
 .motto-container {
 
-	margin-top: 1.8em;
-	margin-right: 10%;
+	padding-top: 220px;
 	text-align: right;
 	font-size: 2.25em;
 
 	.motto {
 		margin-top: 15px;
+		text-align: center;
 		display: inline-block;
 		letter-spacing: 2px;
 		color: #000;
@@ -57,9 +44,8 @@
 
 .quote-container {
 
-	margin: 2.25em 0 0 10%;
+	margin: 50px 0 0 0;
 	padding: 20px;
-	width: 40%;
 	text-align: justify;
 	line-height: 1.5;
 	letter-spacing: 1.15px;
@@ -76,24 +62,29 @@
 
 .modules {
 
-	position: relative;
-	color: #000;
+	color: #272727;
 	background-color: #fff;
-	margin: 125px 0;
-	padding-bottom: 60px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 0;
 
-	.module {
+	li {
 		background-repeat: no-repeat;
-		background-position: 0 0px;
-		width: 20%;
-		margin: 0px 40px;
-		padding: 0 0 30px 50px;
+		background-position: 70px 5px;
 		text-align: left;
-		/*border-left: 1px solid #272727;*/
+		padding: 0 0 0 120px;
+
+		h1 {
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			font-size: 1.75em;
+		}
 
 		p {
 			text-align: left;
 			margin-top: 10px;
+			width: 75%;
 		}
 
 		a {
@@ -106,11 +97,32 @@
 	}
 
 	.projects {
-		background-image: image-url('paint-roller.png');
+		background-image: image-url('hammer.png');
 	}
 
 	.contact {
 		background-image: image-url('comments.png');
+	}
+}
+
+@media (max-width: 40em) {
+
+	.modules {
+
+		li {
+			background-position: 10% 5px;
+			padding: 0 0 40px 25%;
+		}
+
+	}
+
+	.motto {
+		font-size: 0.3em;
+		text-align: center;
+	}
+
+	.motto-container {
+		margin: 0 0 100px 0;
 	}
 }
 
