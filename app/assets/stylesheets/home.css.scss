@@ -105,6 +105,25 @@
 	}
 }
 
+.home-about {
+
+	text-align: center;
+	background-color: #efead4;
+	background-image: url(cream1.jpg);
+
+	h1 {
+		padding: 50px 0;
+	}
+
+	.big-image {
+		img {
+			padding: 15px;
+			background: white;
+		}
+	}
+
+}
+
 @media (max-width: 40em) {
 
 	.modules {
