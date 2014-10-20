@@ -5,8 +5,29 @@ h1 {
 	color: #676767;
 }
 
+h2 {
+	color: #676767;
+	margin: 50px 0;
+}
+
 p {
 	color: #676767;
+}
+
+.button-container {
+	padding: 40px 0;
+}
+
+.button {
+	border-radius: 3px;
+}
+
+.contact {
+	list-style-type: none;
+}
+
+.mobile-contact {
+	display: none;
 }
 
 .static {
@@ -28,6 +49,12 @@ p {
 .logo {
 	margin: 35px 0 0 5%;
 	position: absolute;
+	background-color: rgba(250, 250, 250, 0.8);
+	padding: 10px 5px;
+}
+
+.small-logo {
+	margin-left: 5%;
 }
 
 [data-magellan-expedition] {
@@ -36,6 +63,7 @@ p {
 
 [data-magellan-expedition].fixed {
 	display: block;
+	box-shadow: 0 1px 2px 2px #888;
 }
 
 .sub-nav {
@@ -46,6 +74,11 @@ p {
 	li {
 
 	}
+}
+
+.sub-section {
+	width: 50%;
+	margin: 0 auto;
 }
 
 @media (max-width: 40em) {
@@ -67,6 +100,26 @@ p {
 
 	.logo img {
 		width: 50%;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.mobile-contact {
+
+		padding: 40px 0;
+		display: inline-block;
+		list-style-type: none;
+
+		ul {
+			
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 20px;
+		}
 	}
 }
 

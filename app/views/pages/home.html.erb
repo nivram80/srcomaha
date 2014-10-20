@@ -2,6 +2,8 @@
 
 <section class="banner">
 
+	<div class="texture"></div>
+	
 	<div class="motto-container">
 		<a name="home"></a>
 		<div data-magellan-destination="home" class="row">
@@ -43,9 +45,34 @@
 
 <section class="home-about">
 
-	<h1>About Us</h1>
+	<h1>Our Business</h1>
 	<div class="big-image">
 		<%= image_tag("house.jpg", alt: "home-picture", title: "Exteriors") %>
 	</div>
+	<div class="button-container">
+		<%= link_to "Learn more about us", "/about", class: "button" %>
+	</div>
+
+	<section class="sub-section">
+		<h2>Partners</h2>
+		<ul class="partners large-block-grid-4 small-block-grid-2">
+			<li><%= image_tag("concept175.png", alt: "concept_electric_logo", 
+																					title: "Concept Electric",
+																					width: 100,
+																					height: 91) %></li>
+			<li><%= image_tag("lowes_logo175.png", alt: "lowe's_logo", 
+																						 title: "Lowe's",
+																						 width: 100,
+																					   height: 91) %></li>
+			<li><%= image_tag("apple_logo.png", alt: "apple's logo", 
+																					title: "Apple",
+																					width: 100,
+																					height: 91) %></li>
+			<li><%= image_tag("googleplus_logo.png", alt: "google plus's logo", 
+																							 title: "Google+",
+																							 width: 100,
+																					   	 height: 91) %></li>
+		</ul>
+	</section>
 
 </section>
