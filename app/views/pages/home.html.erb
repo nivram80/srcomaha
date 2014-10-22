@@ -55,23 +55,33 @@
 
 	<section class="sub-section">
 		<h2>Partners</h2>
-		<ul class="partners large-block-grid-4 small-block-grid-2">
-			<li><%= image_tag("concept175.png", alt: "concept_electric_logo", 
-																					title: "Concept Electric",
-																					width: 100,
-																					height: 91) %></li>
-			<li><%= image_tag("lowes_logo175.png", alt: "lowe's_logo", 
-																						 title: "Lowe's",
-																						 width: 100,
-																					   height: 91) %></li>
-			<li><%= image_tag("apple_logo.png", alt: "apple's logo", 
-																					title: "Apple",
-																					width: 100,
-																					height: 91) %></li>
-			<li><%= image_tag("googleplus_logo.png", alt: "google plus's logo", 
-																							 title: "Google+",
-																							 width: 100,
-																					   	 height: 91) %></li>
+		<ul class="partners large-block-grid-3 small-block-grid-3">
+			<li><%= link_to (
+						image_tag("concept175.png", alt: "concept_electric_logo", 
+																				title: "Concept Electric",
+																				width: 100,
+																				height: 91,
+																				target: "_blank")),
+					"http://conceptelectricco.com" %>
+			</li>
+			<li><%= link_to (
+						image_tag("absolute_logo.png", alt: "absolute_design_interiors_logo", 
+																					 title: "Absolute Design Interiors",
+																					 target: "_blank")), 
+					"http://www.absolutedi.com" %>
+			</li>
+			<li><%= link_to (
+						image_tag("araymond_logo.png", alt: "a_raymond_plumbing_logo", 
+																					 title: "A. Raymond Plumbing",
+																					 width: 100,
+																				   height: 91,
+																				   target: "_blank")),
+					"http://www.araymondplumbing.com" %>
+			</li>
+			<!-- <li><%#= image_tag("bbb.jpeg", alt: "bbb_logo", 
+																	 	title: "BBB",
+																		width: 61,
+																		height: 100) %></li> -->
 		</ul>
 	</section>
 
