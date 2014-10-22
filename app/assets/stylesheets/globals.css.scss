@@ -41,6 +41,12 @@ p {
 			a {
 				color: #fff;
 				text-transform: uppercase;
+				transition: all 0.75s ease;
+			}
+
+			a:hover {
+				color: #c0262c;
+				text-decoration: none;
 			}
 		}
 	}
@@ -49,8 +55,8 @@ p {
 .logo {
 	margin: 35px 0 0 5%;
 	position: absolute;
-	background-color: rgba(250, 250, 250, 0.8);
-	padding: 10px 5px;
+	// background-color: rgba(250, 250, 250, 0.8);
+	// padding: 10px 5px;
 }
 
 .small-logo {
