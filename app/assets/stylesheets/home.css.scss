@@ -6,12 +6,10 @@
 	left: 0;
 	width: 100%;
 	height: 650px;
-	background: 
-		// image-url('grey_texture.png'),
-		image-url('kitchen3.jpg');
-	background-size: /*256px 256px,*/ cover;
-	background-position: /*0 0,*/ center;
-	background-repeat: /*repeat,*/ no-repeat;
+	background: image-url('kitchen3.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	z-index: -1;
 }
 
@@ -27,7 +25,6 @@
 		display: inline-block;
 		letter-spacing: 2px;
 		color: #fff;
-		// background-color: rgba(255, 255, 255, 0.8);
 		padding: 10px;
 	}
 
@@ -38,10 +35,6 @@
 		margin-top: -20px;
 	}
 
-}
-
-.quote-container {
-	
 }
 
 .quote {
@@ -111,6 +104,10 @@
 	background-color: #efead4;
 	background-image: image-url('stone_tile2.png');
 
+	.content {
+		margin-bottom: 50px;
+	}
+
 	.big-image {
 		img {
 			padding: 15px;
@@ -124,7 +121,8 @@
 		color: rgba(103, 103, 103, 0.9);
 
 		li {
-			font-size: 1.5em;
+			font-size: 1.25em;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -139,8 +137,12 @@
 }
 
 .home-projects {
-	background-color: #ddd;
+	background-color: #818181;
 	text-align: center;
+
+	h1 {
+		color: #fff;
+	}
 
 	img {
 		padding: 15px;
@@ -154,10 +156,6 @@
 }
 
 .home-form {
-
-	form {
-		// margin: 50px 0;
-	}
 
 	.rather {
 		text-align: center;
@@ -177,28 +175,13 @@
 }
 
 .contact {
-	width: 45%;
 	text-align: left;
 }
 
 @media (max-width: 40em) {
 
-	.modules {
-
-		li {
-			background-position: 10% 5px;
-			padding: 0 0 40px 25%;
-		}
-
+	.quote {
+		margin-top: 350px;
 	}
 
-	.motto {
-		font-size: 0.3em;
-		text-align: center;
-	}
-
-	.motto-container {
-		margin: 0 0 100px 0;
-	}
 }
-

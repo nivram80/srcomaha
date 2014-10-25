@@ -15,7 +15,7 @@
 
 </section>
 
-<ul class="modules large-block-grid-3 small-block-grid-1">
+<ul class="modules large-block-grid-3 small-block-grid-1 show-for-medium-up">
 	<li class="about-us">
 		<h1>About Us</h1>
 		<p>Learn about us and how we came to be.</p>
@@ -39,20 +39,26 @@
 
 	<h1>Our Business</h1>
 
-	<div class="row">
+	<div class="content row">
 
 		<div class="big-image large-6 columns">
 			<%= image_tag("house.jpg", alt: "home-picture", title: "Exteriors") %>
 		</div>
 		<div class="large-1 columns"></div>
-		<div class="points large-5 columns">
-			<ul>
-				<li>This is where point number one will go.</li>
-				<li>This is where point number two will go.</li>
-				<li>This is where point number three will go.</li>
-				<li>This is where point number four will go.</li>
-			</ul>
-		</div>
+		<!-- <p>SRC Contractor owner Mike Schumacher began construction as a framer at the age of 18.  He completed his Construction Management Degree and earned a job as a superintendent for a new construction company.  During that time he perfected his ability to install tile, wood flooring, trim work, and made some great relationships with many sub-contractors.  After seven years of new construction knowledge,  SRC was started and began the first remodel project for a District 66 homeowner who hired us to do a complete master bedroom and bathroom remodel.</p>
+		<p>Since then we have added employees, equipment, and have built a business through repeat customers and referrals from past customers.  We show up on time, we clean up, and we finish the job every time.  Mike’s communication with the customer is key to a happy customer and he is on the job site.</p>  
+		<p>Erin Schumacher works as the office administrator scheduling estimates and customer remodel projects.</p> -->
+
+		<ul class="points small-12 large-5 columns">
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
+			incididunt.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
+			incididunt.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
+			incididunt.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
+			incididunt.</li>
+		</ul>
 	</div>
 
 	<div class="button-container">
@@ -62,7 +68,7 @@
 
 	<section class="sub-section">
 		<h2>Partners</h2>
-		<ul class="partners large-block-grid-3 small-block-grid-3">
+		<ul class="partners large-block-grid-3 small-block-grid-1">
 			<li><%= link_to (
 						image_tag("concept175.png", alt: "concept_electric_logo", 
 																				title: "Concept Electric",
@@ -90,7 +96,7 @@
 
 <section class="home-projects">
 	<h1>Kitchens, Baths, & More</h1>
-	<ul class="large-block-grid-2">
+	<ul class="small-block-grid-1 large-block-grid-2">
 		<li><%= image_tag("brown_bath.jpg", alt: "brown_bath_image", width: "400") %></li>
 		<li><%= image_tag("brown_bath.jpg", alt: "brown_bath_image", width: "400") %></li>
 	</ul>
@@ -101,7 +107,7 @@
 	<h1>Talk to us</h1>
 	
 	<div class="row">
-		<form class="contact large-centered columns">
+		<form class="contact small-12 large-5 large-centered columns">
 
 			<label for="fname">First Name:
 				<input type="text" name="fname" id="fname" autofocus>
@@ -120,7 +126,7 @@
 			</label>
 
 			How shall we contact?<br>
-			<input type="radio" name="contact" id="by_phone" value="phone">
+			<input type="radio" name="contact" id="by_phone" value="phone" checked>
 			<label for="by_phone">Phone</label>
 
 			<input type="radio" name="contact" id="by_email" value="email">
@@ -137,8 +143,6 @@
 			</div>
 
 		</form>
-
-		
 	</div>
 </section>
 
