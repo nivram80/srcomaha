@@ -41,17 +41,18 @@
 }
 
 .quote-container {
+	
+}
 
-	margin: 50px 0 0 0;
+.quote {
+
+	margin-top: 400px;
 	padding: 20px;
-	text-align: justify;
 	line-height: 1.5;
 	letter-spacing: 1.15px;
 	color: #fff;
-	border: 1px solid #fff;
-	border-radius: 5px;
-	// background-color: rgba(0, 0, 0, 0.7);
-	font-size: 0.85em;
+	font-size: 1em;
+	text-align: left;
 
 	.quote-author {
 		margin-top: 15px;
@@ -107,25 +108,77 @@
 
 .home-about {
 
-	text-align: center;
 	background-color: #efead4;
-	background-image: url(cream1.jpg);
-
-	h1 {
-		padding: 50px 0;
-	}
+	background-image: url(stone_tile2.png);
 
 	.big-image {
 		img {
 			padding: 15px;
 			background: white;
+			box-shadow: 4px 4px 2px #888;
 		}
 	}
 
-	.partner {
+	.points {
+		text-align: left;
+		color: rgba(103, 103, 103, 0.9);
 
+		li {
+			font-size: 1.5em;
+		}
 	}
 
+	.partners {
+		img {
+			padding: 15px;
+			background: white;
+			box-shadow: 2px 2px 2px #888;
+		}
+	}
+
+}
+
+.home-projects {
+	background-color: #ddd;
+	text-align: center;
+
+	img {
+		padding: 15px;
+		background: white;
+	}
+
+	ul {
+		width: 80%;
+		margin: 50px auto;
+	}
+}
+
+.home-form {
+
+	form {
+		// margin: 50px 0;
+	}
+
+	.rather {
+		text-align: center;
+		background-color: #818181;
+		padding: 25px 0;
+		margin-top: 20px;
+
+		p {
+			color: #fff;
+			margin: 0;
+		}
+
+		.phone_number {
+			font-size: 30px;
+		}
+	}
+}
+
+.contact {
+	width: 45%;
+	text-align: left;
 }
 
 @media (max-width: 40em) {

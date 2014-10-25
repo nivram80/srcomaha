@@ -3,19 +3,11 @@
 <section class="banner">
 
 	<div class="texture"></div>
-	
-	<div class="motto-container">
-		<a name="home"></a>
-		<div data-magellan-destination="home" class="row">
-			<div class="motto large-8 large-offset-4 medium-6 medium-offset-6 small-10 small-offset-1 end columns">REMODEL, RENOVATE, REINVENT</div><br>
-		</div>
-		<div class="row">
-			<div class="motto cursive large-3 large-offset-9 small-4 small-offset-7 end columns">...your home</div>
-		</div>
-	</div>
+	<a name="home"></a>
+	<div data-magellan-destination="home" class="row"></div>
 
 	<div class="row">
-		<div class="quote-container large-6 columns">
+		<div class="quote large-10 large-centered columns">
 			<div class="largequote">"Mike’s quality workmanship speaks for itself. But the most important 	quality for us was his ability to complete each project on time and at or under our budget."</div>
 			<div class="quote-author">- John and Missi Schembari</div>
 		</div>
@@ -46,12 +38,27 @@
 <section class="home-about">
 
 	<h1>Our Business</h1>
-	<div class="big-image">
-		<%= image_tag("house.jpg", alt: "home-picture", title: "Exteriors") %>
+
+	<div class="row">
+
+		<div class="big-image large-6 columns">
+			<%= image_tag("house.jpg", alt: "home-picture", title: "Exteriors") %>
+		</div>
+		<div class="large-1 columns"></div>
+		<div class="points large-5 columns">
+			<ul>
+				<li>This is where point number one will go.</li>
+				<li>This is where point number two will go.</li>
+				<li>This is where point number three will go.</li>
+				<li>This is where point number four will go.</li>
+			</ul>
+		</div>
 	</div>
+
 	<div class="button-container">
 		<%= link_to "Learn more about us", "/about", class: "button" %>
 	</div>
+	
 
 	<section class="sub-section">
 		<h2>Partners</h2>
@@ -60,7 +67,6 @@
 						image_tag("concept175.png", alt: "concept_electric_logo", 
 																				title: "Concept Electric",
 																				width: 100,
-																				height: 91,
 																				target: "_blank")),
 					"http://conceptelectricco.com" %>
 			</li>
@@ -73,16 +79,66 @@
 			<li><%= link_to (
 						image_tag("araymond_logo.png", alt: "a_raymond_plumbing_logo", 
 																					 title: "A. Raymond Plumbing",
-																					 width: 100,
-																				   height: 91,
+																					 width: 97,
 																				   target: "_blank")),
 					"http://www.araymondplumbing.com" %>
 			</li>
-			<!-- <li><%#= image_tag("bbb.jpeg", alt: "bbb_logo", 
-																	 	title: "BBB",
-																		width: 61,
-																		height: 100) %></li> -->
 		</ul>
 	</section>
 
 </section>
+
+<section class="home-projects">
+	<h1>Kitchens, Baths, & More</h1>
+	<ul class="large-block-grid-2">
+		<li><%= image_tag("brown_bath.jpg", alt: "brown_bath_image", width: "400") %></li>
+		<li><%= image_tag("brown_bath.jpg", alt: "brown_bath_image", width: "400") %></li>
+	</ul>
+	<a class="button">See our work</a>
+</section>
+
+<section class="home-form">
+	<h1>Talk to us</h1>
+	
+	<div class="row">
+		<form class="contact large-centered columns">
+
+			<label for="fname">First Name:
+				<input type="text" name="fname" id="fname" autofocus>
+			</label>
+
+			<label for="lname">Last Name:
+				<input type="text" name="lname" id="lname">
+			</label>
+
+			<label for="email">Email:
+				<input type="email" name="email" id="email">
+			</label>
+
+			<label for="phone">Phone:
+				<input type="tel" name="phone" id="phone">
+			</label>
+
+			How shall we contact?<br>
+			<input type="radio" name="contact" id="by_phone" value="phone">
+			<label for="by_phone">Phone</label>
+
+			<input type="radio" name="contact" id="by_email" value="email">
+			<label for="by_email">Email</label>
+			<br>
+			Tell us about the job you need done:
+			<textarea></textarea>
+
+			<input type="submit" value="submit" class="button tiny">
+
+			<div class="rather">
+				<p>Rather just talk?  Give us a call.</p>
+				<p class="phone_number">(402) 714-5539</p>
+			</div>
+
+		</form>
+
+		
+	</div>
+</section>
+
