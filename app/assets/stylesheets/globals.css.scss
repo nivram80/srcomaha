@@ -86,8 +86,13 @@ textarea {
 	float: right;
 	padding-top: 14px;
 
-	li {
+	a {
+		color: #fff !important;
+		transition: color 0.75s ease;
+	}
 
+	a:hover {
+		color: #C0262C !important;
 	}
 }
 
