@@ -13,6 +13,7 @@ gem 'spring',        group: :development
 gem 'dotenv-rails'
 gem 'unicorn'
 gem 'foundation-rails'
+gem 'pry'
 
 group :production do
 	gem 'rails_12factor'
