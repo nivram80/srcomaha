@@ -1,11 +1,11 @@
 .projects-page {
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #818181), color-stop(1, #aaa));
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #aaa), color-stop(1, #818181));
 	background-image: -moz-linear-gradient(bottom, #818181 0%, #aaa 100%);
 	background-image: -ms-linear-gradient(bottom, #818181 0%, #aaa 100%);
 	background-image: -o-linear-gradient(bottom, #818181 0%, #aaa 100%);
 	
 	background-image: -webkit-linear-gradient(bottom, #818181 0%, #aaa 100%);
-	background-image: linear-gradient(to top, #818181 0%, #aaa 100%);
+	background-image: linear-gradient(to top, #aaa 0%, #818181 100%);
 
 	.title-bar {
 		border-bottom: 6px solid #fff;
