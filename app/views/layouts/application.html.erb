@@ -20,13 +20,9 @@
         </ul>
       </nav>
       <div class="logo">
-        <% if params[:action] == "projects" || params[:action] == "about" %>
           <%= image_tag("srcaomah_logo_w_red.png", alt: "SrcOmaha") %>
-        <% else %>
-          <%= image_tag("srcaomah_logo_w_red2.png", alt: "SrcOmaha") %>
-        <% end %>
       </div>
-      
+
       <nav data-magellan-expedition="fixed">
         <div class="small-logo left">
           <%= image_tag("SRCko_alt_wo_motto.png", alt: "SrcOmaha", size: "86x45") %>

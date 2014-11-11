@@ -101,7 +101,11 @@
 .home-about {
 
 	background-color: #efead4;
-	background-image: image-url('stone_tile2.png');
+	background-image: image-url('dark_gray_texture.jpg');
+
+	h1, h2 {
+		color: #fff;
+	}
 
 	.content {
 		margin-bottom: 50px;
@@ -111,18 +115,18 @@
 		img {
 			padding: 15px;
 			background: white;
-			box-shadow: 4px 4px 2px #888;
+			// box-shadow: 4px 4px 2px #888;
 		}
 	}
 
 	.points {
 		text-align: left;
-		color: #676767;
+		color: #fff;
 		list-style-position: outside;
-		background-color: #fff;
+		// background-color: #fff;
 		padding-left: 45px;
 		padding-top: 20px;
-		box-shadow: 4px 4px 2px #888;
+		// box-shadow: 4px 4px 2px #888;
 		padding-bottom: 8px;
 
 		li {
