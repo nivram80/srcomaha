@@ -3,6 +3,10 @@
 @import 'about';
 @import 'projects';
 
+.mobile {
+	display: none;
+}
+
 h1 {
 	text-transform: uppercase;
 	margin: 20px 0 50px 0;
@@ -139,14 +143,12 @@ footer {
 }
 
 @media (max-width: 40em) {
-	.menu-button {
+	.desktop {
+		display: none !important;
+	}
+
+	.mobile {
 		display: inline-block;
-		width: 100px;
-		padding: 10px 20px;
-		text-decoration: none;
-		background-color: rgba(255, 255, 255, 0.8);
-		color: #272727;
-		text-transform: uppercase;
 	}
 
 	nav {
@@ -155,8 +157,26 @@ footer {
 		}
 	}
 
-	.logo img {
-		width: 50%;
+	.sub-nav {
+		li {
+			font-size: .4rem;
+
+			a {
+				padding: 9px;
+			}
+		}
+	}
+
+	.small-logo {
+		width: 75px;
+		length: 39px;
+		margin-left: 0;
+	}
+
+	.logo {
+		margin: 50px auto 0 auto;
+		width: 212px;
+		left: 20%
 	}
 
 	.mobile-contact {

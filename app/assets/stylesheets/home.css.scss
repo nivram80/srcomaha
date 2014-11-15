@@ -34,21 +34,33 @@
 		margin-top: -20px;
 	}
 
-}
+} 
 
-.quote {
-
+.bottom-banner-row {
 	margin-top: 400px;
-	padding: 20px;
-	line-height: 1.5;
-	letter-spacing: 1.15px;
-	color: #fff;
-	font-size: 1em;
-	text-align: left;
 
-	.quote-author {
-		margin-top: 15px;
-		font-style: italic;
+	.social {
+		margin-top: 20px;
+	}
+
+	img {
+		padding: 3px;
+	}
+
+	.quote {
+
+		padding: 20px;
+		line-height: 1.5;
+		letter-spacing: 1.15px;
+		color: #fff;
+		font-size: 1em;
+		text-align: left;
+
+		.quote-author {
+			margin-top: 15px;
+			font-style: italic;
+		}
+
 	}
 
 }
@@ -190,7 +202,21 @@
 @media (max-width: 40em) {
 
 	.quote {
-		margin-top: 350px;
+		display: none;
 	}
 
+	.banner {
+		background-position: 65%;
+		height: 600px;
+	}
+
+	.rather {
+		p {
+			padding-bottom: 15px;
+		}
+
+		a {
+			margin-bottom: 0px;
+		}
+	}
 }

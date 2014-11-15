@@ -6,11 +6,19 @@
 	<a name="home"></a>
 	<div data-magellan-destination="home" class="row active"></div>
 
-	<div class="row">
-		<div class="quote large-10 large-centered columns">
+	<div class="row bottom-banner-row">
+		<div class="quote large-10 columns">
 			<div class="largequote">"Mike’s quality workmanship speaks for itself. But the most important 	quality for us was his ability to complete each project on time and at or under our budget."</div>
 			<div class="quote-author">- John and Missi Schembari</div>
 		</div>
+		<div class="social large-1 columns">
+			<div class="large-block-grid-2">
+	      <%= image_tag("twitter.png", alt: "twitter", title: "Twitter") %>
+	      <%= image_tag("facebook.png", alt: "facebook", title: "Facebook") %>
+	      <%= image_tag("google-plus.png", alt: "google+", title: "Google+") %>
+	      <%= image_tag("linkedin.png", alt: "linkedin", title: "LinkedIn") %>
+	    </div>
+	  </div>
 	</div>
 
 </section>
@@ -88,7 +96,7 @@
 </section>
 
 <section class="home-projects">
-	<h1>Kitchens, Baths, & More</h1>
+	<h1>Baths, Kitchens & More</h1>
 	<ul class="small-block-grid-1 large-block-grid-2">
 		<li><%= image_tag("brown_bath.jpg", alt: "brown_bath_image", width: "350") %></li>
 		<li><%= image_tag("kitchen_cab.jpg", alt: "kitchen_image", width: "357") %></li>
@@ -132,7 +140,8 @@
 
 			<div class="rather">
 				<p>Rather just talk?  Give us a call.</p>
-				<p class="phone_number">(402) 714-5539</p>
+				<p class="desktop phone_number">(402) 714-5539</p>
+				<a href="tel:4027145539" class="mobile button tiny">Call us</a>
 			</div>
 
 		</form>
