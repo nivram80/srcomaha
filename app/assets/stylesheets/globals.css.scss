@@ -90,7 +90,6 @@ textarea {
 
 [data-magellan-expedition].fixed {
 	display: block;
-	// box-shadow: 0 1px 2px 2px #888;
 }
 
 .title-bar {
@@ -98,11 +97,11 @@ textarea {
 }
 
 .left-bar {
-	margin-top: 224px !important;
+	margin-top: 180px !important;
 }
 
 .right-bar {
-	margin-top: 179px !important;
+	margin-top: 138px !important;
 }
 
 .sub-nav {
@@ -122,6 +121,18 @@ textarea {
 
 .sub-page {
 	text-align: center;
+}
+
+.sub-page-nav {
+	background-color: rgba(39, 39, 39, 0.95);
+	width: 100%;
+	position: absolute;
+	padding: 10px 10px 0 5px;
+
+	ul {
+		margin-top: 5px;
+		padding: 0;
+	}
 }
 
 .sub-section {
@@ -160,6 +171,7 @@ footer {
 	.sub-nav {
 		li {
 			font-size: .4rem;
+			margin-top: 5px;
 
 			a {
 				padding: 9px;
@@ -174,14 +186,14 @@ footer {
 	}
 
 	.logo {
-		margin: 50px auto 0 auto;
+		margin: 175px auto 0 auto;
 		width: 212px;
 		left: 20%
 	}
 
 	.mobile-contact {
 
-		padding: 40px 0;
+		padding: 0;
 		display: inline-block;
 		list-style-type: none;
 

@@ -24,7 +24,7 @@
 	aside {
 
 		ul {
-			background-color: #C0262C;
+			background-color: rgba(192, 38, 44, 0.8);
 			text-align: left;
 			color: #fff;
 			padding: 20px 20px 20px 0;
@@ -38,6 +38,34 @@
 
 			}
 		}
+	}
+
+}
+
+@media (max-width: 40em) {
+
+	.about-page {
+
+		h1 {
+			margin: 60px 0 0 0;
+		}
+
+		.about-content {
+
+			p {
+				text-align: left;
+			}
+
+		}
+
+		ul {
+			margin-left: 0;
+		}
+
+		aside ul li {
+			font-size: 1.25em
+		}
+
 	}
 
 }
