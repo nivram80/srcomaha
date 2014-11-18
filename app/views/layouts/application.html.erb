@@ -10,19 +10,18 @@
   </head>
 
   <body>
-    <%# if params[:action] != 'home' %>
-      <nav class="sub-page-nav mobile">
-        <div class="small-logo left">
-          <%= link_to (image_tag("SRCko_alt_wo_motto.png", alt: "SrcOmaha", size: "86x45")),
-              home_path %>
-        </div>
-        <ul class="sub-nav">
-          <li data-megellan-arrival="about-us"><%= link_to 'About', about_path %></li>
-          <li data-megellan-arrival="project"><%= link_to 'Projects', projects_path %></li>
-          <li data-megellan-arrival="contact-us"><%= link_to 'Contact', home_path(anchor: "contact-form") %></li>
-        </ul>
-      </nav>
-    <%# end %>
+
+    <nav class="sub-page-nav mobile">
+      <div class="small-logo left">
+        <%= link_to (image_tag("SRCko_alt_wo_motto.png", alt: "SrcOmaha", size: "86x45")),
+            home_path %>
+      </div>
+      <ul class="sub-nav">
+        <li data-megellan-arrival="about-us"><%= link_to 'About', about_path %></li>
+        <li data-megellan-arrival="project"><%= link_to 'Projects', projects_path %></li>
+        <li data-megellan-arrival="contact-us"><%= link_to 'Contact', home_path(anchor: "contact-form") %></li>
+      </ul>
+    </nav>
 
     <div class="content-wrap">
       <nav class="static right">
@@ -37,16 +36,9 @@
           <%= link_to (image_tag("srcaomah_logo_w_red.png", alt: "SrcOmaha")),
               home_path %>
       </div>
-      
-      <%# if params[:action] == 'home' %>
-        <!-- <div class="mobile logo">
-            <%=# link_to (image_tag("srcaomah_logo_w_red.png", alt: "SrcOmaha")),
-              home_path %>
-        </div> -->
-      <%# end %>
 
       <% if params[:action] == 'home' %>
-        <nav data-magellan-expedition="fixed">
+        <nav class="desktop" data-magellan-expedition="fixed">
           <div class="small-logo left">
             <%= link_to (image_tag("SRCko_alt_wo_motto.png", alt: "SrcOmaha", size: "86x45")),
               home_path %>
