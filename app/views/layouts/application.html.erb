@@ -56,19 +56,23 @@
     </div>
     <footer>
       <div class="row">
-        <div class="large-5 columns">
-          <p>Phone: (402) 714-5539</p>
-          <p>Contact Us</p>
+        <div class="left">
+          <a href="#" target="_blank">
+            <%= image_tag("twitter.png", alt: "twitter", title: "Twitter") %>
+          </a>
+          <a href="#" target="_blank">
+            <%= image_tag("facebook.png", alt: "facebook", title: "Facebook") %>
+          </a>
+          <a href="#" target="_blank">
+            <%= image_tag("google-plus.png", alt: "google+", title: "Google+") %>
+          </a>
+          <a href="#" target="_blank">
+            <%= image_tag("linkedin.png", alt: "linkedin", title: "LinkedIn") %>
+          </a>
         </div>
-        <div class="large-4 columns">
-          <%= image_tag("twitter.png", alt: "twitter", title: "Twitter") %>
-          <%= image_tag("facebook.png", alt: "facebook", title: "Facebook") %>
-          <%= image_tag("google-plus.png", alt: "google+", title: "Google+") %>
-          <%= image_tag("linkedin.png", alt: "linkedin", title: "LinkedIn") %>
-        </div>
-        <div class="large-3 columns">
-          <p>Copyright &copy; <%= Time.now.year %> SRC Contractor</p>
-          <p>Developed by OmahaAreaMan</p>
+        <div class="right">
+          <p>&copy; <%= Time.now.year %> SRC Contractor</p>
+          <p>Design by <a class="attr" href="http://omahaareaman.com" target="_blank">OmahaAreaMan</p>
         </div>
       </div>
     </footer>

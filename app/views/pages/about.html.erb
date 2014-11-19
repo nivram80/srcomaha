@@ -23,12 +23,6 @@
 		</aside>
 	</article>	
 
-	<ul class="desktop button-container">
-		<li><a class="button">Contact Us</a></li>
-	</ul>
-	<ul class="mobile button-container mobile-contact">
-		<li><%= link_to "Email Us", home_path(anchor: "contact-form"), class: "button tiny" %></li>
-		<li><a href="tel:14026196463" class="button tiny">Call Us</a></li>
-	</ul>
+	<%= render 'contact_us_buttons' %>
 
 </section>

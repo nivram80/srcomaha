@@ -9,7 +9,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	z-index: -1;
+	z-index: 0;
 }
 
 .motto-container {
@@ -40,11 +40,11 @@
 	margin-top: 400px;
 
 	.social {
-		margin-top: 20px;
+		margin-top: 13px;
 	}
 
 	img {
-		padding: 3px;
+		padding: 9px;
 	}
 
 	.quote {
