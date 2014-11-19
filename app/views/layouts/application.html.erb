@@ -55,26 +55,22 @@
 
     </div>
     <footer>
-      <div class="row">
-        <div class="left">
-          <a href="#" target="_blank">
-            <%= image_tag("twitter.png", alt: "twitter", title: "Twitter") %>
-          </a>
-          <a href="#" target="_blank">
-            <%= image_tag("facebook.png", alt: "facebook", title: "Facebook") %>
-          </a>
-          <a href="#" target="_blank">
-            <%= image_tag("google-plus.png", alt: "google+", title: "Google+") %>
-          </a>
-          <a href="#" target="_blank">
-            <%= image_tag("linkedin.png", alt: "linkedin", title: "LinkedIn") %>
-          </a>
-        </div>
-        <div class="right">
-          <p>&copy; <%= Time.now.year %> SRC Contractor</p>
-          <p>Design by <a class="attr" href="http://omahaareaman.com" target="_blank">OmahaAreaMan</p>
-        </div>
+      <div class="social-icon">
+        <a href="#" target="_blank">
+          <%= image_tag("twitter.png", alt: "twitter", title: "Twitter") %>
+        </a>
+        <a href="#" target="_blank">
+          <%= image_tag("facebook.png", alt: "facebook", title: "Facebook") %>
+        </a>
+        <a href="#" target="_blank">
+          <%= image_tag("google-plus.png", alt: "google+", title: "Google+") %>
+        </a>
+        <a href="#" target="_blank">
+          <%= image_tag("linkedin.png", alt: "linkedin", title: "LinkedIn") %>
+        </a>
       </div>
+      <p>&copy; <%= Time.now.year %> SRC Contractor</p>
+      <p>Design by <a class="attr" href="http://omahaareaman.com" target="_blank">OmahaAreaMan</p>
     </footer>
     <%= javascript_include_tag "application" %>
   </body>

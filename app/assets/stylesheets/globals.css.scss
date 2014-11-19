@@ -150,13 +150,17 @@ textarea {
 
 footer {
 	background-color: #272727;
-	padding: 30px 10px;
-
+	text-align: center;
+	padding: 20px 0;
 
 	p {
 		color: #fff;
 		margin: 0;
 		font-size: 0.75em;
+	}
+
+	.social-icon {
+		margin-bottom: 10px;
 	}
 
 	.attr {
