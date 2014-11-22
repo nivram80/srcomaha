@@ -1,0 +1,9 @@
+<div class="small-logo left">
+  <%= link_to (image_tag("SRCko_alt_wo_motto.png", alt: "SrcOmaha", size: "86x45")),
+      home_path %>
+</div>
+<ul class="sub-nav">
+  <li data-megellan-arrival="about-us"><%= link_to 'About', about_path %></li>
+  <li data-megellan-arrival="project"><%= link_to 'Projects', projects_path %></li>
+  <li data-megellan-arrival="contact-us"><%= link_to 'Contact', home_path(anchor: "contact-form") %></li>
+</ul>
