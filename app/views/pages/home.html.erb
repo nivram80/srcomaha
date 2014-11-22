@@ -7,24 +7,13 @@
 	<div data-magellan-destination="home" class="row active"></div>
 
 	<div class="row bottom-banner-row">
-		<div class="quote small-10 large-10 columns">
+		<div class="quote small-0 large-10 columns">
 			<div class="largequote">"Mike’s quality workmanship speaks for itself. But the most important 	quality for us was his ability to complete each project on time and at or under our budget."</div>
 			<div class="quote-author">- John and Missi Schembari</div>
 		</div>
-		<div class="social small-2 large-2 columns">
-			<div class="large-block-grid-2">
-				<a href="#" target="_blank">
-	      	<%= image_tag("twitter.png", alt: "twitter", title: "Twitter") %>
-	      </a>
-	      <a href="#" target="_blank">
-	      	<%= image_tag("facebook.png", alt: "facebook", title: "Facebook") %>
-	      </a>
-	      <a href="#" target="_blank">
-	      	<%= image_tag("google-plus.png", alt: "google+", title: "Google+") %>
-	      </a>
-	      <a href="#" target="_blank">
-	      	<%= image_tag("linkedin.png", alt: "linkedin", title: "LinkedIn") %>
-	      </a>
+		<div class="social small-12 large-2 columns">
+			<div class="small-block-grid-4 large-block-grid-2">
+				<%= render 'social_icons' %>
 	    </div>
 	  </div>
 	</div>
@@ -119,7 +108,7 @@
 		<form class="contact small-12 medium-5 large-5 medium-centered large-centered columns">
 
 			<label for="fname">First Name:
-				<input type="text" name="fname" id="fname" autofocus>
+				<input type="text" name="fname" id="fname">
 			</label>
 
 			<label for="lname">Last Name:
