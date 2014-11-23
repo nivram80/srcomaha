@@ -105,35 +105,32 @@
 	<h1>Talk to us</h1>
 	
 	<div class="row">
-		<form class="contact small-12 medium-5 large-5 medium-centered large-centered columns">
+		<%= form_for @email, html: {:class => 'contact small-12 medium-5 large-5 medium-centered large-centered columns' } do |f| %>
 
-			<label for="fname">First Name:
-				<input type="text" name="fname" id="fname">
-			</label>
+			<%= f.label :first_name %>
+  		<%= f.text_field :first_name, required: true %>
 
-			<label for="lname">Last Name:
-				<input type="text" name="lname" id="lname">
-			</label>
+  		<%= f.label :last_name %>
+  		<%= f.text_field :last_name, required: true %>
 
-			<label for="email">Email:
-				<input type="email" name="email" id="email">
-			</label>
+  		<%= f.label :email %>
+  		<%= f.text_field :email, required: true %>
 
-			<label for="phone">Phone:
-				<input type="tel" name="phone" id="phone">
-			</label>
+  		<%= f.label :phone %>
+  		<%= f.text_field :phone, required: true %>
 
-			How shall we contact?<br>
-			<input type="radio" name="contact" id="by_phone" value="phone" checked>
-			<label for="by_phone">Phone</label>
+			How shall we contact you?<br>
+  		<%= f.radio_button :contact_method, "phone", { checked: true } %>
+  		<%= f.label :contact_method, "Phone" %>
 
-			<input type="radio" name="contact" id="by_email" value="email">
-			<label for="by_email">Email</label>
+  		<%= f.radio_button :contact_method, "email" %>
+  		<%= f.label :contact_method, "Email" %>
 			<br>
-			Tell us about the job you need done:
-			<textarea></textarea>
 
-			<input type="submit" value="Submit" class="button tiny">
+			Tell us about the job you need done:
+			<%= f.text_area :message, required: true %>
+
+      <%= f.submit 'Send message', :class => "button tiny" %>
 
 			<div class="rather">
 				<p>Rather just talk?  Give us a call.</p>
@@ -141,7 +138,7 @@
 				<a href="tel:14026196463" class="mobile button tiny">Call us</a>
 			</div>
 
-		</form>
+  	<% end %>
 	</div>
 </section>
 

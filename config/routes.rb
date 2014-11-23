@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'projects' => 'pages#projects'
 
+  resources :emails
+
 end

@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
 	def home
+		@email = Email.new
 	end
 
 	def about
@@ -8,5 +9,5 @@ class PagesController < ApplicationController
 
 	def projects
 	end
-	
+
 end
