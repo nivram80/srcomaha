@@ -100,9 +100,16 @@
 	</ul>
 	<a href="projects" class="button">See our work</a>
 </section>
+
 <a id="contact-form"></a>
+
 <section class="home-form">
+
 	<h1>Talk to us</h1>
+
+	<% flash.each do |key, value| %>
+		<%= content_tag :div, value, class: "flash_#{key}" %>
+	<% end %>
 	
 	<div class="row">
 		<%= form_for @email, html: {:class => 'contact small-12 medium-5 large-5 medium-centered large-centered columns' } do |f| %>

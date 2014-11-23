@@ -15,3 +15,23 @@
  *= require foundation_and_overrides
 
 */
+
+.flash_notice {
+	color: #C0262C;
+	border: 1px solid #C0262C;
+	width: 400px;
+	margin: -25px auto 25px auto;
+	padding: 5px;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+
+@media (max-width: 40em) {
+
+	.flash_notice {
+		width: 335px;
+		font-size: 0.75rem;
+	}
+
+}

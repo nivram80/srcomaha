@@ -6,10 +6,10 @@ class EmailsController < ApplicationController
 		if @email.save
 			flash[:notice] = "Your message has been sent to SRC Contractor."
 			EmailNotification.send_contact_us_email(@email).deliver
-			redirect_to root_path
+			redirect_to "/home/#contact-form"
 		else
-			flash[:notice] = "Please fix errors."
-			redirect_to root_path
+			flash[:notice] = "Your message was not submitted. Please try again."
+			redirect_to "/home/#contact-form"
 		end
 	end
 
