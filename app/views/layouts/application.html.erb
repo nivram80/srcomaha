@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=devise=width, initial-scale=1">
-    <title><%= content_for?(:title) ? yield(:title) : "SrcOmaha.net" %></title>
+    <title>Omaha - SRC Contractor - Remodel & Renovate - <%= content_for?(:title) ? yield(:title) : "srcomaha.net" %></title>
+    <%= favicon_link_tag 'src_fav.png' %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= stylesheet_link_tag "application" %>
     <%= csrf_meta_tags %>
