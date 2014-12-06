@@ -3,7 +3,7 @@ class EmailNotification < ActionMailer::Base
 
   def send_contact_us_email(email)
   	@email = email
-  	mail( to: 'nivram80@gmail.com',
+  	mail( to: 'schu4u1@gmail.com',
   				subject: "#{@email.full_name} - srcomaha.net email")
   end
 
