@@ -33,9 +33,16 @@
 
 			li {
 				margin-left: 50px;
-				font-size: 1.4em;
+				font-size: 1.7em;
 				margin-bottom: 15px;
 
+			}
+		}
+
+		a {
+			color: #fff;
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}
