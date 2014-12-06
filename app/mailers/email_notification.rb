@@ -1,10 +1,10 @@
 class EmailNotification < ActionMailer::Base
-  default from: "contact@srcomaha.net"
+  default from: "contact_us@srcomaha.net"
 
   def send_contact_us_email(email)
   	@email = email
   	mail( to: 'nivram80@gmail.com',
-  				subject: 'SrcOmaha.net Contact Us Email')
+  				subject: "#{@email.full_name} - srcomaha.net email")
   end
 
 end

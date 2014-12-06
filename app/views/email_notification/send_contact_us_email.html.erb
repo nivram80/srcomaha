@@ -4,12 +4,12 @@
 	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body> 
-	<h1>Someone has sent you a message from your site!</h1>
-	<p>From: <%= @email.full_name %></p>
-	<p>Email: <%= @email.email %></p>
-	<p>Phone: <%= @email.phone %></p>
-	<p>Preferred Contact Method: <%= @email.contact_method %></p>
-	<p>Message: <%= @email.message %></p>
+	<h1><%= @email.full_name %> has sent you a message from your site!</h1>
+	<p>Contact Email: <%= @email.email %></p>
+	<p>Contact Phone: <%= @email.phone %></p>
+	<p>Prefers Contact Method: <%= @email.contact_method %></p>
+	<p>Message: <br>
+	 <%= @email.message %></p>
 
 	<% if @email.contact_method == 'email' %>
 		<p>Reply to <%= mail_to "#{@email.email}", "#{@email.first_name}" %></p>
