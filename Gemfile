@@ -18,6 +18,7 @@ gem 'foundation-rails'
 gem 'pry'
 gem 'mail_form'
 gem 'simple_form'
+gem 'heroku'
 
 group :production do
 	gem 'rails_12factor'
