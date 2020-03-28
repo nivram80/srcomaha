@@ -4,7 +4,7 @@ ruby '2.7.0'
 
 gem 'rails', '5.2'
 gem 'pg'
-gem 'sass-rails', '~> 5.1.0'
+gem 'sass-rails', '~> 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 5.0.0'
 gem 'jquery-rails'
@@ -16,7 +16,7 @@ gem 'better_errors', 		group: :development
 gem 'binding_of_caller', group: :development
 gem 'dotenv-rails'
 gem 'unicorn'
-gem 'foundation-rails'
+gem 'foundation-rails', '~> 6.6.1.0'
 gem 'pry'
 gem 'mail_form'
 gem 'simple_form'
